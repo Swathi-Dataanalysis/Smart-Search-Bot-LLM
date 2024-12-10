@@ -17,17 +17,17 @@ jobs:
           fetch-depth: 0
           lfs: true
 
-      # Step 2: Pull changes from Hugging Face Spaces
-      - name: Pull changes from Hugging Face Spaces
+      # Step 2: Add Hugging Face as a remote and fetch changes
+      - name: Add Hugging Face remote
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
           git remote add huggingface https://Swathi97:$HF_TOKEN@huggingface.co/spaces/Swathi97/Smart_Search_Bot_LLM
           git fetch huggingface main
-          git pull --rebase huggingface main || git pull --no-rebase huggingface main
 
-      # Step 3: Push changes to Hugging Face Spaces
-      - name: Push to hub
+      # Step 3: Force push to overwrite the remote repository
+      - name: Force push to Hugging Face
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://Swathi97:$HF_TOKEN@huggingface.co/spaces/Swathi97/Smart_Search_Bot_LLM main
+        run: |
+          git push https://Swathi97:$HF_TOKEN@huggingface.co/spaces/Swathi97/Smart_Search_Bot_LLM main --force
