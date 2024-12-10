@@ -95,16 +95,16 @@ Follow these steps to run SmartSearch on your local computer:
 4. chroma_vectorstore/: Directory for storing embedding vectors.
 5. README.md: Documentation detailing project features, instructions, and limitations.
 
-# YAML File: Purpose and Creation (needed for hugging face deploymeny, if you running your application locally you don't need to worry about YAML file)
+### YAML File: Purpose and Creation (needed for hugging face deploymeny, if you running your application locally you don't need to worry about YAML file)
 
 ## Purpose of the YAML File
 A YAML file is used for defining metadata, configurations, and settings for the project. For Hugging Face Spaces:
 
 - It specifies the application entry point, SDK, title, license and other parameters.
 - It helps Hugging Face correctly configure and display the project.
---- How to Create a YAML File ---
-# Add a metadata block at the top of the README.md file:
-# Refer to the beginning of the readme file 
+### How to Create a YAML File 
+#### Add a metadata block at the top of the README.md file:
+#### Refer to the beginning of the readme file to learn how to create YAML File 
 Save this metadata as part of the README.md file. # like above
 Hugging Face YAML Documentation
 For more details, refer to the Hugging Face documentation: Hugging Face Spaces YAML Guide.
@@ -113,6 +113,8 @@ For more details, refer to the Hugging Face documentation: Hugging Face Spaces Y
 ## Backend Process
 
 The backend process of SmartSearch consists of several stages, designed to efficiently load, process, store, and retrieve information from user-provided URLs or documents. Below is a detailed explanation of each stage, as illustrated in the provided image:
+
+![alt text](<RAG Workflow.png>)
 
 1. Document Loading
 
