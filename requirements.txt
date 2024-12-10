@@ -6,7 +6,6 @@ langchain
 langchain_chroma
 langchain_openai
 langchain_community
-python3.11
 matplotlib
 pandas
 
