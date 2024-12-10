@@ -1,5 +1,5 @@
 
-# SmartSearch: Research Tool
+# Smart-Search-Bot-LLM
 
 SmartSearch is an advanced RAG (Retrieve and Generate) application designed to streamline information retrieval from articles across any domain. Whether you’re investigating financial reports, scientific research, industry updates, blogs, or any other topic, SmartSearch allows users to input article URLs and instantly query relevant insights directly from the content. Designed for flexibility, SmartSearch efficiently provides answers and insights regardless of the article's subject matter.
 
