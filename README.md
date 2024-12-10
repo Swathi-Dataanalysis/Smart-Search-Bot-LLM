@@ -16,10 +16,23 @@ SmartSearch is an advanced RAG (Retrieve and Generate) application designed to s
 - Persistent Statistics: Tracks the total number of queries processed and ratings submitted during the session, with visualizations.
 - Improved Efficiency: SmartSearch identifies duplicate or unchanged URLs to prevent redundant processing, saving resources and time.
 
+---
+title: Smart Search Bot LLM
+emoji: 🤖
+colorFrom: blue
+colorTo: green
+sdk: streamlit
+app_file: app.py
+pinned: false
+---
+
+# Smart Search Bot LLM
+This is a smart search application built using LangChain, OpenAI, and Chroma.
+
 # Steps to Navigate
 
 1. Navigate to the project directory:
-   cd /Users/rameshchidurala/Desktop/Project/Capstone_Smartsearch_Project
+   
 
 2. Activate environment variables:
    source myenv/bin/activate
@@ -219,3 +232,4 @@ SmartSearch is perfect for:
 
 # The SmartSearch Vision
 With SmartSearch, information retrieval is no longer a tedious task. Instead, it’s an intuitive, engaging, and efficient experience—putting the power of accurate, domain-specific insights at your fingertips.
+
