@@ -107,7 +107,14 @@ A YAML file is used for defining metadata, configurations, and settings for the 
 #### Refer to the beginning of the readme file to learn how to create YAML File 
 Save this metadata as part of the README.md file. # like above
 Hugging Face YAML Documentation
-For more details, refer to the Hugging Face documentation: Hugging Face Spaces YAML Guide.
+For more details, refer to the Hugging Face documentation: https://huggingface.co/docs/hub/en/spaces-github-actions
+
+## License
+
+- This project is licensed under the GNU General Public License v3.0 (GPL-3.0) for the source code hosted on GitHub. See the [LICENSE](LICENSE) file for details.
+
+- The Hugging Face deployment is licensed under the Apache License 2.0, as per Hugging Face Spaces requirements.
+
 
 # Other details 
 ## Backend Process
