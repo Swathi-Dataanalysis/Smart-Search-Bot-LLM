@@ -74,6 +74,14 @@ Follow these steps to run SmartSearch on your local computer:
  - Feedback ratings are displayed as a colorful bar chart.
  - Query response times are plotted to analyze system performance.
 
+# Below is the example URLs used to test the Smart Search
+  - https://docs.snowflake.com/en/user-guide/cleanrooms/introduction
+  - https://python.langchain.com/docs/introduction/
+  - https://www.analyticsvidhya.com/blog/2021/10/everything-you-need-to-know-about-linear-regression/
+  - https://learn.microsoft.com/en-us/azure/databricks/delta/
+  - https://www.moneycontrol.com/news/business/tata-motors-launches-punch-icng-price-starts-at-rs-7-1-lakh-11098751.html
+  - https://www.nbcnews.com/weather/weather-thanksgiving-travel-rcna182213
+    
 # Limitations
 
 1. Reprocessing URLs:
