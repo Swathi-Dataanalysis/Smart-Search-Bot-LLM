@@ -60,7 +60,7 @@ Follow these steps to run SmartSearch on your local computer:
  - Input up to three HTTP article URLs in the sidebar to retrieve and process content.
  - Click "Process URLs" to initiate loading, preprocessing, chunking, and embedding vector creation.
  - Enter your query in the text box and receive responses with relevant sources.
- - 
+   
 # Enhancements
 
 1. API Key Input:
