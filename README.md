@@ -50,7 +50,9 @@ The primary goal of SmartSearch is to enable users to process URLs, retrieve tar
 
 5. Use the API Key in SmartSearch
 Once you have your API key, copy it into the OpenAI API Key field in the SmartSearch app's sidebar or the .env file if running locally.
+
 (or)
+
 Once you login with your email click on settings (gear) icon where you can see all the options of the above steps.
 
 # Accessing SmartSearch Application
