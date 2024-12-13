@@ -82,8 +82,8 @@ def load_data(urls):
 def split_data(data):
     text_splitter = RecursiveCharacterTextSplitter(
         separators=['\n\n', '\n', '.', ','],
-        chunk_size=1500,
-        chunk_overlap=200
+        chunk_size=1200,
+        chunk_overlap=100
     )
     main_placeholder.text("Splitting Text... Started...")
     docs = text_splitter.split_documents(data)
