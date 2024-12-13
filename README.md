@@ -26,6 +26,33 @@ The primary goal of SmartSearch is to enable users to process URLs, retrieve tar
 6. Feedback Mechanism: Allows users to rate query responses for iterative refinement and better results.
 7. Dynamic Visualizations: Tracks feedback ratings and query response times, displaying them as visualizations to analyze system performance.
 
+# How to Obtain an OpenAI API Key
+- If you are new to OpenAI and need an API key to use SmartSearch, follow these steps:
+
+1. Create an OpenAI Account
+- Visit the OpenAI website: https://openai.com/.
+- Click on the "Sign Up" button if you don’t already have an account.
+- Follow the instructions to create an account. If you already have an account, click "Log In" and enter your credentials.
+#### Note: New users receive $5 in free credits, which can be used to explore the API and test the application.
+
+2. Set Up Billing Information
+- Before generating an API key, you need to set up billing information.
+- Navigate to the Billing page: https://platform.openai.com/account/billing/overview.
+- Click "Add Payment Method" and provide valid payment details.
+- Once your billing setup is complete, you can proceed to generate your API key.
+  
+3. Access the API Dashboard
+- After setting up billing, navigate to the API Dashboard: https://platform.openai.com/account/api-keys
+  
+4. Generate a New API Key
+- On the API Keys page, click the "Create new secret key" button.
+- A new API key will be generated. Copy this key and store it securely, as it will not be shown again.
+
+5. Use the API Key in SmartSearch
+Once you have your API key, copy it into the OpenAI API Key field in the SmartSearch app's sidebar or the .env file if running locally.
+(or)
+Once you login with your email click on settings (gear) icon where you can see all the options of the above steps.
+
 # Accessing SmartSearch Application
 
 You can directly access the SmartSearch application deployed on Hugging Face Spaces by visiting:
@@ -101,7 +128,8 @@ Follow these steps to run SmartSearch on your local computer:
 2. app.py: Core script integrating loading, preprocessing, embedding, querying, feedback mechanisms, and visualizations with UI implementation.
 3. test.py: Processes URLs but focuses on checking for changes since the last session.
 4. chroma_vectorstore/: Directory for storing embedding vectors.
-5. README.md: Documentation detailing project features, instructions, and limitations.
+5. .env:Configuration file for securely storing sensitive API keys. # Need this if you are running this application in your local computer.
+6. README.md: Documentation detailing project features, instructions, and limitations.
 
 ### YAML File: Purpose and Creation (needed for hugging face deploymeny, if you running your application locally you don't need to worry about YAML file)
 
