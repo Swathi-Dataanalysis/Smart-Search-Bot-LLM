@@ -78,7 +78,7 @@ Follow these steps to run SmartSearch on your local computer:
 3. Set up your OpenAI API key:
 - Create a .env file in the project root and add your API key:
   
-    OPENAI_API_KEY=your_api_key_here
+    OPENAI_API_KEY='your_api_key_here'
   
 4. Run the Streamlit app:
    
