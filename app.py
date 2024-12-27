@@ -150,7 +150,7 @@ if query and not st.session_state.satisfied:
             for source in sources_list:
                 st.write(source)
 
-        # Collect user feedback using `with` to wait for button submission
+        # Collect user feedback
         with st.form("feedback_form"):
             st.markdown("""
             ### Rate the Answer
@@ -181,8 +181,11 @@ if query and not st.session_state.satisfied:
             st.session_state.rating = temp_rating
             st.session_state.feedback_history.append({
                 "query": query,
+                "answer": result["answer"],
+                "sources": sources,
                 "rating": temp_rating,
                 "comments": feedback_comment,
+                "response_time": response_time
             })
 
             # Process refinement only if the rating is less than 4
@@ -235,3 +238,21 @@ if st.session_state.query_times:
     ax.set_ylabel("Response Time (seconds)")
     ax.grid(axis='both', linestyle='--', alpha=0.7)
     st.pyplot(fig)
+
+# Add download button for feedback logs
+if st.session_state.feedback_history:
+    st.subheader("Download Feedback Logs")
+
+    # Create a DataFrame from the feedback history
+    feedback_df = pd.DataFrame(st.session_state.feedback_history)
+
+    # Convert the DataFrame to CSV
+    csv_data = feedback_df.to_csv(index=False)
+
+    # Provide a download link for the CSV file
+    st.download_button(
+        label="Download Feedback Logs as CSV",
+        data=csv_data,
+        file_name="feedback_logs.csv",
+        mime="text/csv"
+    )
